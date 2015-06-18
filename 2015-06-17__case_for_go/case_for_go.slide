@@ -1,0 +1,92 @@
+The Case for Go
+A Simple Language
+17 Jun 2015
+
+Dave Jack
+
+* Bullet Points
+- Compiled
+- Statically typed
+- Garbage collected
+- OO without a type hierarchy (no subclasses)
+- Modern concurrency primitives
+- Run-time reflection
+- Performance comparable to Java
+- Exemplary standard library
+
+* Hello World
+.play hello.go
+
+* Game of Life
+.link https://play.golang.org/p/P-Dk0NH_vf Go Playground
+
+* Simple
+Language specs:
+
+- Go: 50 pages
+- Java: 600 pages
+- Ruby: ???
+.code perl.txt
+
+* Tools
+.code go_cmd.txt
+
+* Tools
+.link http://localhost:6060 godoc
+.link https://godoc.org/golang.org/x/tools/cmd/stringer stringer
+
+
+* Gripes
+
+* Go doesn't have X
+Possible reasons for omitting X:
+
+- Hard to implement
+- Impossible to implement efficiently
+- Hard to design
+
+* Go doesn't have X
+
+“Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.”
+― Antoine de Saint-Exupéry, _Airman's_Odyssey_
+
+* Go is tedious
+- Go complains about unused variables / package imports.
+- Error handling code is repetitive
+
+* Go is tedious
+*Tidiness*
+Code is written once, read many times over its lifetime.  Enforced linting ensures almost all Go code is exceedingly clean and readable.  Combined with `gofmt` and `godoc`, looking up and understanding implementation details is more effortless than in any language I've ever used.  And `goimports` is available to help with some of the tedium.
+
+*Error*Handling*
+"The language's design and conventions encourage you to explicitly check for errors where they occur (as distinct from the convention in other languages of throwing exceptions and sometimes catching them)."
+
+
+* Go doesn't teach you anything 
+- Doesn't break new ground in programming language research
+- Missing parametric polymorphism (generics), predicate dispatch, etc.
+
+* Go doesn't teach you anything 
+Go is grounded in engineering, not academia.  At the very least, Go is worth learning for what teaches you about shipping.
+
+* Pragmatic Choices
+They are pervasive.  One example:
+
+.code bench.txt
+
+* Resources
+*Essentials*
+
+.link https://tour.golang.org A Tour of Go
+.link https://golang.org/ref/spec Language Spec
+.link https://golang.org/doc/effective_go.html Effective Go
+.link https://golang.org/doc/ Everything Else
+
+*Favorites*
+
+.link http://vimeo.com/53221560 Code that grows with grace (video)
+.link http://dave.cheney.net/2015/05/22/struct-composition-with-go Struct composition with Go
+.link http://avtok.com/2014/11/05/interface-upgrades.html Interface Upgrades
+
+* Cool Docker Tricks
+.code docker.txt

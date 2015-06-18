@@ -1,0 +1,10 @@
+› docker-machine create --driver virtualbox dev && eval "$(docker-machine env dev)"
+
+› docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp golang:1.4 go run hello2.go
+Hello, b14f82d2b868
+
+› docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp \
+-e GOOS=darwin -e GOARCH=amd64 golang:1.4-cross \
+go build hello2.go && \
+./hello2
+Hello, davejackmac.eminorinc.lan

@@ -1,0 +1,5 @@
+› curl -s "http://design.perl6.org/S03.html" | html-to-text | wc -c
+  214909
+
+› curl -s "http://golang.org/ref/spec" | html-to-text | wc -c
+  166816
